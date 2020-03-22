@@ -801,14 +801,14 @@ label #cancel:hover{
     font-size: 1rem;
     margin: 0 auto;
     cursor: pointer;
-    background: #67CC50;
+    background: #4F80B3;
     display: block;
-    border: solid #67CC50 0px;
-    color: #30841D;
+    border: solid #234366 0px;
+    color: #234366;
 }
 
 .test-button:hover {
-    background: #30841D;
+    background: #234366;
     color: white;
 }
 
