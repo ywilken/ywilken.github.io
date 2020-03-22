@@ -128,6 +128,11 @@ p, img {
     h2 {
         font-size: 1.5rem;
     }
+
+    .block {
+        width: 98%;
+        padding: 2em 1em;
+    }
 }
 
 @media (min-width: 800px) {
@@ -786,6 +791,7 @@ label #cancel:hover{
 .resources {
     color: rgba(255,255,255,0.3);
     font-size: 1rem;
+    text-decoration: none;
 }
 
 /*==================
