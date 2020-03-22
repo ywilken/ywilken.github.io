@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet">        
         <link href="../css/styles.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload="pageLoaded()">
         <!--===SIDEBAR===-->
         <!--=======Menu open/close=======-->
         <input type="checkbox" id="check">
@@ -74,13 +74,15 @@
                             <div class="chapter-box__text chapter-box__text--practice">
                                 <p><span class="strong--box">Ejercicio 01:</span> La longitud de la hipotenusa es igual a la raíz cuadrada.</p>
                                 <div class="chapter-box__text--practice--ex"> 
-                                    <p class="practice--ex__items">3 + 4 = <span class="practice-solution"> 7 </span></p>
-                                    <p class="practice--ex__items">2 + 6 = _____</p>
-                                    <p class="practice--ex__items">7 + 9 = _____</p>
-                                    <p class="practice--ex__items">0 + 11 = _____</p>
+                                    <p class="practice--ex__items">3 + 4 = <span class="solution practice-solution-no"> 7 </span></p>
+                                    <p class="practice--ex__items">2 + 6 = <span class="solution practice-solution-no"> 8 </span></p>
+                                    <p class="practice--ex__items">7 + 9 = <span class="solution practice-solution-no"> 16 </span></p>
+                                    <p class="practice--ex__items">0 + 11 = <span class="solution practice-solution-no"> 11 </span></p>
                                 </div>
                             </div>
                         </div>
+                        <button class="clickButton test-button shadow-btn">¡Muestra solución!</button>
+                        
                     </div>
 
                     <div class="chapter">
@@ -133,4 +135,13 @@
         </main>
         
     </body>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+
 </html>
