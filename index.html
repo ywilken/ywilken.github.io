@@ -5,36 +5,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Monica</title>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Caveat:700&display=swap" rel="stylesheet">        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700|Caveat:400,700&display=swap" rel="stylesheet">        
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <!--===SIDEBAR===-->
-            <!--=======Menu open/close=======-->
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="btn"></i>
-                <i class="fas fa-times" id="cancel"></i>
-            </label>
-            <!--=======Sidebar Menu=======-->
-            <div class="sidebar">
-                <header>¡Hola!</header>
-                <ul>
-                    <li><a href="#"><i class="fas fa-h-square"></i>Home</a></li>
-                    <li><a href="html/grado-1.html"><i class="fas fa-paw"></i>Grado 1</a></li>
-                    <li><a href="#"><i class="fas fa-fish"></i>Grado 2</a></li>
-                    <li><a href="#"><i class="fas fa-dove"></i>Grado 3</a></li>
-                    <li><a href="#"><i class="fas fa-cat"></i>Grado 4/5</a></li>
-                    <li><a href="#"><i class="fas fa-question-circle"></i>Sobre mi</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i>Contacto</a></li>
+       
+        <!--=======Header=======-->
+        <header class="main-header">
+            <div class="container flex-container">
+                <div class="site-title">Monica</div>
+                <ul class="main-nav flex-container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#site-courses">Cursos</a></li>
+                    <li><a href="#site-about">Quien soy</a></li>
+                    <li><a href="#site-contact">Contacto</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="flex-2">
-            <!--=======Section=======-->
-            <main class="main-image"></main>
-        </div>
-       
+        </header>
+        
+        <main>
+            <!--=======Hero Section=======-->
+            <div class="site-hero-complete shadow-home">
+                <section class="site-hero container">
+                    <h1 class="site-hero__title">¡Aprende matematicas!</h1>
+                    <h2 class="site-hero__subtitle">En linea y desde la casa.</h2>
+                    <img class="site-hero__image" src="img/pen.png" alt="">
+                </section>
+            </div>
+
+            <!--=======Course Section=======-->
+            <section class="site-courses flex-container" id="site-courses">
+                <div class="container courses-container">
+                    <div class="courses-title site-hero__title">Elige tu curso ya.</div>
+                    <div class="flex-container courses-flex">
+
+                        <!--=======Course: Grado 01=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <div class="site-courses__icon"><a href="html/grado-1.html"><i class="fas fa-paw"></i></a></div>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 1</p>
+                        </div>
+    
+                        <!--=======Course: Grado 02=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box ">
+                                <div class="site-courses__icon"><i class="fas fa-horse-head"></i></div>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 2</p>
+                        </div>
+    
+                        <!--=======Course: Grado 03=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <div class="site-courses__icon"><i class="fas fa-dove"></i></div>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 3</p>
+                        </div>
+    
+                        <!--=======Course: Grado 04=======-->
+                        <div class="site-courses__item">
+                            <div class="site-courses-courses__box">
+                                <div class="site-courses__icon"><i class="fas fa-cat"></i></div>
+                            </div>
+                            <p class="site-courses__subtitle">Grado 4/5</p>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </section>
+
+            <section class="shadow-home" id="site-about">
+                <div class="flex-container container site-about">
+                    <p class="site-about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                        took a galley of type and scrambled it to make a type specimen book. </p>
+                    <img class="site-about__image" src="img/hand.png" alt="">
+                </div>
+            </section>
+
+            <section class="site-contact" id="site-contact">
+                <div class="container">
+                    <div class="contact-container flex-container">
+                        <div class="site-contact__icon"><i class="far fa-envelope"></i></div>
+                        <p class="site-contact__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+                            took a galley of type and scrambled it to make a type specimen book. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="site-footer">
+            <p>Monica</p>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+            <p><a class="resources" href='https://pngtree.com/so/background'>Background png from pngtree.com</a></p>
+        </footer>
 
         
         
