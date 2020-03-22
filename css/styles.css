@@ -638,7 +638,12 @@ label #cancel:hover{
     font-size: 6rem;
     margin: 0;
     line-height: 0;
+    
+}
+
+.site-courses__icon a {
     color: rgb(219,158,117);
+    text-decoration: none;
 }
 
 .site-courses__icon:hover {
@@ -726,7 +731,6 @@ label #cancel:hover{
     color: rgba(255,118,101,0.8);
     text-align: center;
     line-height: 1;
-    border: 1px solid magenta;
 }
 
 .site-contact__text {
