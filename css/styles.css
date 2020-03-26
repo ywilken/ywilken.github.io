@@ -153,6 +153,12 @@ p, img {
     border-radius: 25px;
 }
 
+.block > * {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .real-block--continue {
     margin-top: 5em;
 }
