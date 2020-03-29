@@ -63,6 +63,10 @@ h2,
     font-weight: 900;
 }
 
+u {
+    text-decoration: underline dotted;
+}
+
 /*
 h3 {
     color: #842b27;
@@ -196,7 +200,7 @@ p, img {
     margin-bottom: 1em;
 }
 
-.line {
+hr {
     border: 1.2px dotted #ff7665;
     margin: 2em 0;
     opacity: 0.4;
@@ -442,7 +446,7 @@ p, img {
     font-weight: 900;
 }
 
-.resources
+.resources,
 .resources p {
     margin-bottom: 0;
 }
