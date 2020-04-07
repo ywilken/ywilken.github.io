@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Monica</title>
+        <title>Fibonacho</title>
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet">        
         <link href="../css/styles.css" rel="stylesheet">
@@ -11,36 +12,47 @@
     <body onload="pageLoaded()">
         <!--===SIDEBAR===-->
         <!--=======Menu open/close=======-->
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <!--=======Sidebar Menu=======-->
-        <div class="sidebar">
-            <header>Grado 1</header>
-            <ul>
-                <li><a href="../index.html"><i class="fas fa-h-square"></i>Home</a></li>
-                <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>Conjuntos</a></li>
-                <li><a href="#"><i class="fas fa-question-circle"></i>Sobre mi</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i>Contacto</a></li>
-            </ul>
-        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <!--=======Sidebar Menu=======-->
+            <div class="sidebar">
+                <header>Grado 1</header>
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-h-square"></i>Home</a></li>
+                    <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>Conjuntos</a></li>
+                    <li><a href="../index.html#site-about"><i class="fas fa-question-circle"></i>Sobre mi</a></li>
+                    <li><a href="../index.html#site-contact"><i class="fas fa-envelope"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!--=======Section=======-->
         <main class="pattern">
-            <section class="block">
+            <article class="block">
 
                 <div class="real-block shadow">
 
-                    <div class="chapter">
+                    <section class="chapter">
                         <!--<p class="date">19/03/20</p>-->
                         <div class="chapter-level">Nivel 1</div>
                         <h1 class="chapter-title">Conjuntos</h1>
                         <p class="subtitle">En este capitulo aprenderás todo sobre conjuntos.</P>
                         <img src="../img/conjuntos/group.jpg" alt="">
-                        <div><span class="chapter__number">Introducción</span></div>
-                        <h2 class="section-title">¿Qué es un conjunto y para qué nos sirve?</h2>
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <div><span class="chapter__number">Introducción</span></div>
+                                <h2 class="section-title">¿Qué es un conjunto y para qué nos sirve?</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/sd8fPrDqtLk" target="_blank">Video 01</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
+                        
                         <p class="main-text">Un conjunto es un <strong>grupo de objetos</strong> (que pueden ser: 
                             frutas, colores, juguetes, personas, etc.) que comparten una 
                             característica común.</p>
@@ -64,10 +76,20 @@
                             animi dolor provident porro cumque. Sit minus doloribus impedit ullam deserunt.</p>
                         -->
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(1)</span>Representación de conjuntos:</h2>
+                    <!--=======Chapter 01=======-->
+                    <section class="chapter">
+                         <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(1)</span>Representación de conjuntos:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/EHkXUP-0heY" target="_blank">Video 02</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
+                        
                         <p class="main-text">Hoy veremos dos formas de representar conjuntos:</p>
                         <ol class="section-list">
                             <li><strong>Diagramas de Venn</strong></li>
@@ -88,10 +110,20 @@
                         <p class="main-text">Finalmente cierras la llave:</p>
                         <p class="main-text text-margin"><strong>R: {naranja, manzana, sandía, fresa}</strong></p>
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(2)</span>Cardinal de un conjunto:</h2>
+                    <!--=======Chapter 02=======-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(2)</span>Cardinal de un conjunto:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/_2N2DU-ImrI" target="_blank">Video 03</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
+
                         <p class="main-text">El cardinal de un conjunto es el número de elementos u objetos que tenemos 
                             dentro del conjunto.</p>
                         <p><span class="example">Observa:</span></p>
@@ -101,10 +133,20 @@
                             cuántos elementos hay dentro.
                         </p>
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(3)</span>Relación de pertenencia y no pertenencia:</h2>
+                    <!--=======Chapter 03=======-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(3)</span>Relación de pertenencia y no pertenencia:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/B4KCvaXpMVY" target="_blank">Video 04</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
+
                         <p class="main-text">Para saber si un elemento o un objeto puede 
                             pertenecer o estar dentro de nuestro conjunto tenemos que compararlos 
                             y pensar si comparten la característica común.</p>
@@ -116,16 +158,34 @@
                         <p><span class="example">Ejemplo:</span></p>
                         <img class="img-diagram" src="../img/conjuntos/conjuntos-7.png" alt="">
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
-                    <div class="chapter resources resources-margin">
+                    <!--=======Video & PDF Button=======-->
+                    <section class="chapter chapter-new">
+                        <div class="flex-video-container">
+                            <p class="text-summary">¡Tiempo para un repaso!</p>
+                            <div class="flex-video flex-video-last">
+                                <!--=======Button: Video=======-->
+                                <div class="flex-video-btn">
+                                    <a class="test-button test-button-inverted shadow-btn" href="https://youtu.be/wyJYg1CGLEM" target="_blank">Video 05</a>
+                                </div>
+                                <!--=======Button: Workshop=======-->
+                                <div class="flex-video-btn">
+                                    <a class="test-button test-button-inverted shadow-btn" href="https://drive.google.com/file/d/1u2UFc2SdBp2FU5RY3GfykPPzNkTnYmh-/view?usp=sharing" target="_blank">Taller</a>
+                                </div>
+                            </div> <!--=======/Video & PDF Button=======-->
+                        </div>
+                    </section>
+
+                    <!--=======Resources=======-->
+                    <section class="resources resources-margin">
                         <h2 class="section-title"><span class="chapter__number"><i class="fas fa-graduation-cap"></i></span>Material extra para trabajar el tema conjuntos:</h2>
                         <div class="resources">
                             <a href="https://fichasparaimprimir.com/wp-content/uploads/2017/07/Ficha-de-Aprendiendo-Conjuntos-para-Primero-de-Primaria.pdf" target="_blank">Ficha sobre conjuntos</a>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="chapter resources">
+                    <section class="resources">
                         <h2 class="section-title"><span class="chapter__number"><i class="fas fa-external-link-alt"></i></span>Créditos de las figuras:</h2>
                         <div class="resources">
                             <a href="https://unsplash.com/@miinyuii" target="_blank">Photo by Duy Pham</a>
@@ -137,11 +197,18 @@
                             <a href="https://www.freepik.es/fotos-vectores-gratis/invierno" target="_blank">Vector de Invierno creado por macrovector_official - www.freepik.es</a>                        </p>
                         </div>
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
                 </div>
-            </section>
+            </article>
         </main>
+
+        <footer class="site-footer">
+            <img class="footer-logo" src="../img/fibonacho.png" alt="">
+            <div class="footer-title">fibonacho</div>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+        </footer>
         
     </body>
 

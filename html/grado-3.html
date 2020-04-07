@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Monica</title>
+        <title>Fibonacho</title>
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.png">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap" rel="stylesheet">        
         <link href="../css/styles.css" rel="stylesheet">
@@ -11,38 +12,49 @@
     <body onload="pageLoaded()">
         <!--===SIDEBAR===-->
         <!--=======Menu open/close=======-->
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-bars" id="btn"></i>
-            <i class="fas fa-times" id="cancel"></i>
-        </label>
-        <!--=======Sidebar Menu=======-->
-        <div class="sidebar">
-            <header>Grado 3</header>
-            <ul>
-                <li><a href="../index.html"><i class="fas fa-h-square"></i>Home</a></li>
-                <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>La suma</a></li>
-                <li><a href="#"><i class="fas fa-question-circle"></i>Sobre mi</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i>Contacto</a></li>
-            </ul>
-        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <!--=======Sidebar Menu=======-->
+            <div class="sidebar">
+                <header>Grado 3</header>
+                <ul>
+                    <li><a href="../index.html"><i class="fas fa-h-square"></i>Home</a></li>
+                    <li><a href="#" class="current-page"><i class="fas fa-user-astronaut"></i>La suma</a></li>
+                    <li><a href="../index.html#site-about"><i class="fas fa-question-circle"></i>Sobre mi</a></li>
+                    <li><a href="../index.html#site-contact"><i class="fas fa-envelope"></i>Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!--=======Section=======-->
         <main class="pattern">
-            <section class="block">
+            <article class="block">
 
                 <div class="real-block shadow">
 
                     <!--=======Intro=======-->
-                    <div class="chapter">
+                    <section class="chapter">
                         <!--<p class="date">19/03/20</p>-->
                         <div class="chapter-level">Nivel 1</div>
                         <h1 class="chapter-title">Las propiedades de la suma</h1>
                         <p class="subtitle">En este capitulo aprenderás todo sobre la suma.</P>
                         <!--=======Hero Image=======-->
                         <img src="../img/suma/dog-glasses.jpg" alt="">
-                        <div><span class="chapter__number">Introducción</span></div>
-                        <h2 class="section-title">¿Qué son las propiedades de la suma y para qué nos sirven?</h2>
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <div><span class="chapter__number">Introducción</span></div>
+                                <h2 class="section-title">¿Qué son las propiedades de la suma y para qué nos sirven?</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/swn21COtE78" target="_blank">Video 01</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
+
                         <p class="main-text">
                         Una propiedad es una característica o un rasgo que identifica a algo o a alguien. 
                         La suma tiene sus propias características que nos permiten hacer diferentes formas de 
@@ -62,12 +74,19 @@
                         </ul>
 
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
                     <!--=======Chapter 01=======-->
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(1)</span>Propiedad conmutativa:</h2>
-                        <div class="space"></div>  <!--empty space-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(1)</span>Propiedad conmutativa:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/9v7RBSnpA6U" target="_blank">Video 02</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
 
                         <!--=======LearnBox=======-->
                         <div class="chapter-box chapter-box--learn">
@@ -84,13 +103,20 @@
                         <img class="img-diagram" src="../img/suma/suma-2.png" alt="">
 
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
 
                     <!--=======Chapter 02=======-->
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(2)</span>Propiedad asociativa:</h2>
-                        <div class="space"></div>  <!--empty space-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(2)</span>Propiedad asociativa:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/asJBI751Vqw" target="_blank">Video 03</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
 
                         <!--=======LearnBox=======-->
                         <div class="chapter-box chapter-box--learn">
@@ -111,13 +137,20 @@
                              agrupar los sumandos de una forma diferente a la ya dada.”</p>
 
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
 
                     <!--=======Chapter 03=======-->
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(3)</span>Propiedad del elemento neutro:</h2>
-                        <div class="space"></div>  <!--empty space-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(3)</span>Propiedad del elemento neutro:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/MjmlVF20FV4" target="_blank">Video 04</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
 
                         <!--=======LearnBox=======-->
                         <div class="chapter-box chapter-box--learn">
@@ -134,13 +167,20 @@
                         <img class="img-diagram" src="../img/suma/suma-4.png" alt="">
 
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
 
                     <!--=======Chapter 04=======-->
-                    <div class="chapter">
-                        <h2 class="section-title"><span class="chapter__number">(4)</span>Propiedad distributiva:</h2>
-                        <div class="space"></div>  <!--empty space-->
+                    <section class="chapter">
+                        <!--=======Title & Video Button=======-->
+                        <div class="flex-video">
+                            <div class="flex-video-title">
+                                <h2 class="section-title"><span class="chapter__number">(4)</span>Propiedad distributiva:</h2>
+                            </div>
+                            <div class="flex-video-btn">
+                                <a class="test-button shadow-btn" href="https://youtu.be/jpIJpdq1Zts" target="_blank">Video 05</a>
+                            </div>
+                        </div> <!--=======/Title & Video Button=======-->
 
                         <!--=======LearnBox=======-->
                         <div class="chapter-box chapter-box--learn">
@@ -159,16 +199,33 @@
                         <p><span class="example">Observa:</span></p> <!--"Observa"-->
                         <img class="img-diagram" src="../img/suma/suma-5.png" alt="">
                         <img class="img-diagram" src="../img/suma/suma-5-1.png" alt="">
-                        <div class="line"></div> <!--line-->
+                        <hr>
                         <img class="img-diagram" src="../img/suma/suma-5-2.png" alt="">
                         <img class="img-diagram" src="../img/suma/suma-5-3.png" alt="">
 
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
+
+                    <!--=======Video & PDF Button=======-->
+                    <section class="chapter chapter-new">
+                        <div class="flex-video-container">
+                            <p class="text-summary">¡Tiempo para un repaso!</p>
+                            <div class="flex-video flex-video-last">
+                                <!--=======Button: Video=======-->
+                                <div class="flex-video-btn">
+                                    <a class="test-button test-button-inverted shadow-btn" href="https://youtu.be/BY7G2OOJFc8" target="_blank">Video 06</a>
+                                </div>
+                                <!--=======Button: Workshop=======-->
+                                <div class="flex-video-btn">
+                                    <a class="test-button test-button-inverted shadow-btn" href="https://drive.google.com/file/d/1HhiZQP95bd6ON0jGTpSd4Yafbr_vWdCA/view?usp=sharing" target="_blank">Taller</a>
+                                </div>
+                            </div> <!--=======/Video & PDF Button=======-->
+                        </div>
+                    </section>
 
 
                     <!--=======Extra: Resources=======-->
-                    <div class="chapter resources resources-margin">
+                    <section class="resources resources-margin">
                         <h2 class="section-title"><span class="chapter__number"><i class="fas fa-graduation-cap"></i></span>Material extra para trabajar las propiedades de la suma:</h2>
                         <p>Fichas para trabajar la propiedad asociativa, conmutativa y elemento neutro de la suma:</p>
                         <div class="resources list-dot">
@@ -177,29 +234,36 @@
                         <div class="resources list-dot">
                             <a href="https://www.edufichas.com/matematicas/aprender-las-horas/" target="_blank">Ficha 02</a>
                         </div>
-                    </div>
+                    </section>
 
                     <!--=======Extra: Videos=======-->
-                    <div class="chapter resources resources-margin">
+                    <section class="resources resources-margin">
                         <h2 class="section-title"><span class="chapter__number"><i class="fas fa-video"></i></span>Enlaces de vídeos sobre el reloj:</h2>
                         <p>Vídeo de La Eduteca en el cual encontrarás una explicación sencilla de la propiedad conmutativa y asociativa de la suma:</p>
                         <div class="resources list-dot">
                             <a href="https://www.youtube.com/watch?v=wZn5JZatTBY&list=RDwZn5JZatTBY&start_radio=1" target="_blank">Vídeo 01</a>
                         </div>
-                    </div>
+                    </section>
 
                     <!--=======Extra: Credits=======-->
-                    <div class="chapter resources">
+                    <section class="resources">
                         <h2 class="section-title"><span class="chapter__number"><i class="fas fa-external-link-alt"></i></span>Créditos de las figuras:</h2>
                         <div class="resources list-dot">
                             <a href="https://unsplash.com/@jamie452" target="_blank">Photo by Jamie Street</a>
                         </div>
                         <div class="space"></div>  <!--empty space-->
-                    </div>
+                    </section>
 
                 </div>
-            </section>
+            </article>
         </main>
+
+        <footer class="site-footer">
+            <img class="footer-logo" src="../img/fibonacho.png" alt="">
+            <div class="footer-title">fibonacho</div>
+            <p class="copyright">Copyright 2020</p>
+            <p>• • •</p>
+        </footer>
         
     </body>
 

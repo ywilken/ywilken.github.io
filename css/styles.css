@@ -113,8 +113,31 @@ p, img {
     color: #842b27;
 }
 
+/*.chapter-new {
+    margin-top: 6em;
+}
+
 .chapter {
-    margin-bottom: 3em;
+    margin-bottom: 8em;
+}*/
+
+/*.space-dots {
+    text-align: center;
+    color: gray;
+    font-size: 2rem;
+    width: 100%;
+}*/
+
+.chapter:after {
+    content: "• • • • • • • • •";
+    margin: 2em auto;
+    color: #ff847c;
+    opacity: 0.4;
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2.6;
 }
 
 .date {
@@ -596,6 +619,7 @@ label #cancel:hover{
     background-size: cover;*/
     min-height: 100vh;
     transition: all 500ms;
+    padding-bottom: 6em;
 }
 
 .main-image {
@@ -658,6 +682,9 @@ label #cancel:hover{
 /*==================
     NAVIGATION
   ==================*/
+.test {
+    color: #3A454A
+}
 
 .main-header {
     background-color: #16252C;
@@ -683,6 +710,14 @@ label #cancel:hover{
     font-size: 2rem;
 }
 
+.site-logo {
+    width: 1.7em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0.4em;
+}
+
 .flex-container {
     display: flex;
     align-items: center;
@@ -701,7 +736,7 @@ label #cancel:hover{
     padding: 0;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 775px) {
     .container {
         width: 80%;
     }
@@ -721,6 +756,25 @@ label #cancel:hover{
     .site-title {
         padding: 0;
     }
+
+    .site-logo {
+        margin-left: auto;
+        margin-right: 0.25em;
+    }
+
+    .site-logo {
+        margin-left: auto;
+        margin-right: 0.25em;
+    }
+
+    /*.site-footer .site-title {
+        margin-left: 0.25em;
+        margin-right: auto;
+    }
+
+    .site-footer .site-logo {
+        margin-right: 0.25em;
+    }*/
 }
 
 @media (min-width: 1000px) {
@@ -767,7 +821,7 @@ label #cancel:hover{
     margin: 1em auto 2em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 775px) {
     .site-hero {
         height: 80vh;
         justify-content: center;
@@ -858,7 +912,7 @@ label #cancel:hover{
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 775px) {
     .site-courses {
         min-height: 100vh;
     }
@@ -894,21 +948,23 @@ label #cancel:hover{
     font-weight: 400;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 775px) {
     .site-about {
         padding: 0;
-        height: 100vh;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        min-height: 100vh;
         justify-content: space-between;
         font-weight: 400;
         font-size: 2rem;
     }
 
     .site-about__text {
-        width: 35%;
+        width: 50%;
     }
 
     .site-about__image {
-        width: 60%;
+        width: 45%;
     }
 }
 
@@ -942,7 +998,21 @@ label #cancel:hover{
     color: white;
 }
 
-@media (min-width: 700px) {
+.site-contact__text a {
+    color: rgba(255,118,101,0.8);
+}
+
+.site-contact__text span {
+    color: rgba(255,118,101,0.8);
+}
+
+.site-contact__text a:focus,
+.site-contact__text a:hover{
+    color: #ffc365;
+}
+
+
+@media (min-width: 775px) {
     .contact-container {
         padding: 0;
         height: 100vh;
@@ -990,28 +1060,77 @@ label #cancel:hover{
     text-decoration: none;
 }
 
+.footer-title {
+    padding-bottom: 1em;
+    margin: 0;
+    line-height: 0;
+    font-family: 'Caveat', cursive;
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-logo {
+    width: 1.7em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0.4em;
+}
+
 /*==================
     TESTs
   ==================*/
 
+/*
+.btn-box {
+    background: #ff7665;
+    /*background-image: linear-gradient(90deg, #16252C, gray);*/
+    /*background-image: linear-gradient(90deg, #FFE1D9, #E59D89);*/
+    /*border-radius: 20px;
+}
+*/
+
 .test-button {
+    justify-content: center;
     padding: 0.5em 2em;
     background: gray;
-    border-radius: 8px;
+    border-radius: 2px;
     font-family: 'Baloo 2', cursive;
     font-weight: 700;
-    font-size: 1rem;
-    margin: 0 auto;
+    font-size: 1.125rem;
+    text-decoration: none;
     cursor: pointer;
-    background: #4F80B3;
-    display: block;
+    /*background: #4F80B3;*/
+    /*
+    background-image: linear-gradient(90deg, #B2CFFE, #76A3EB);
     border: solid #234366 0px;
     color: #234366;
+    */
+    background: #234366;
+    color: white;
+    /*margin: 0.5em auto;*/
+    /*margin-left: 0.5em;*/
+    transition: 500ms transform;
+}
+
+.test-button--broader {
+    padding-left: 2.75em;
+    padding-right: 2.75em;
 }
 
 .test-button:hover {
-    background: #234366;
+    background: #4F80B3;
     color: white;
+    transform: scale(1.1);
+}
+
+.test-button-inverted {
+    background: #4F80B3;
+}
+
+.test-button-inverted:hover {
+    background: #234366;
 }
 
 .test-button:focus,
@@ -1026,8 +1145,74 @@ label #cancel:hover{
     box-shadow:         0px 0px 9px 2px rgba(0,0,0,0.2);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
+.flex-video-container {
+    background: #2a363b;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+}
+
+.flex-video {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    align-items: flex-start;
+}
+
+.flex-video-btn {
+    display: flex;
+    align-self: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.flex-video-btn-last {
+    display: flex;
+}
+
+.flex-video-last {
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.test-button-last {
+    margin-top: 1em;
+}
+
+.text-summary {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    color: #ff7665;
+}
+
 @media (min-width: 700px) {
-    .test-button {
+    /*.test-button {
         margin: 0 4em 0 auto;
+    }*/
+
+    .flex-video {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .flex-video-last {
+        justify-content: space-evenly;
+    }
+
+    .flex-video-title {
+        width: 60%;
+    }
+    
+    .flex-video-btn {
+        width: 35%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .flex-video-btn {
+        justify-content: flex-end;
     }
 }
+
